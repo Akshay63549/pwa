@@ -1,11 +1,18 @@
-import nextPwaConfig from './next-pwa-config.js';
+// next.config.js
 
-const nextConfig = {
-  reactStrictMode: true,
-  // Other Next.js configuration options
-};
+/** @type {import('next').NextConfig} */
+import runtimeCaching from "next-pwa/cache.js";
 
-export default {
-  ...nextPwaConfig,
-  ...nextConfig
-};
+import WithPWA from "next-pwa";
+const withPWA = WithPWA({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+  runtimeCaching,
+  disable:false
+});
+
+export default withPWA({
+  // other congigs
+  reactStrictMode: false,
+});

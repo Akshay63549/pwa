@@ -1,12 +1,12 @@
 {
-    "theme_color": "#daa674",
+    "theme_color": "#f69435",
     "background_color": "#f69435",
-    "display": "browser",
+    "display": "fullscreen",
     "scope": "/",
     "start_url": "/",
-    "name": "demoproject",
-    "short_name": "demo",
-    "description": "this is testing pwa ",
+    "name": "doctor-driving",
+    "short_name": "dr.driving",
+    "description": "An SASS to find a best trainer in the town",
     "icons": [
         {
             "src": "/icon-192x192.png",
